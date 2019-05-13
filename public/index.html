@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee Portal</title>
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="#notices">Notices</a></li>
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#employees">Employees</a></li>
+        <li><a href="#profile">Profile</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li id="liUser"><a href="#profile">Hi User</a></li>
+        <li id="liLogout"><a href="#logout">Logout</a></li>
+        <li id="liLogin"><a href="#login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="bodyContent" class="container">
+
+    <div class="col-xs-6 col-sm-3 placeholder">
+      <a href="#notices">
+        <img src="./images/notice.jpg" class="img-responsive img-circle" alt="Generic placeholder thumbnail">
+        <h3 class="text-muted">Notices</h3>
+      </a>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+      <a href="#issues">
+        <img src="./images/issue.jpg" class="img-responsive img-circle" alt="Generic placeholder thumbnail">
+        <h3 class="text-muted">Issues</h3>
+      </a>
+    </div>
+    <div class="col-xs-6 col-sm-3 placeholder">
+      <a href="#employees"><img src="./images/employee.jpg" class="img-responsive img-circle"
+          alt="Generic placeholder thumbnail">
+        <h3 class="text-muted">Employees</h3>
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-sm-3 placeholder">
+      <a href="#profile"><img src="./images/profile.png" class="img-responsive img-circle"
+          alt="Generic placeholder thumbnail">
+        <h3 class="text-muted">Profile</h3>
+      </a>
+    </div>
+  </div>
+  <br> <br> <br>
+  <nav class="navbar navbar-fixed-bottom navbar-inverse">
+    <div class="footer" style="text-align: center;">
+      <br> &copy Mohd. Faizan Khan <br> Jamia Millia Islamia - 2017<br><br>
+    </div>
+  </nav>
+
+  <script type="text/javascript" src="./lib/jquery.js"></script>
+  <script type="text/javascript" src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="./lib/handlebars.js"></script>
+  <script type="text/javascript" src="./js/notices.js"></script>
+  <script type="text/javascript" src="./js/issues.js"></script>
+  <script type="text/javascript" src="./js/employees.js"></script>
+  <script type="text/javascript" src="./js/login.js"></script>
+  <script type="text/javascript" src="./js/logout.js"></script>
+  <script type="text/javascript" src="./js/profile.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

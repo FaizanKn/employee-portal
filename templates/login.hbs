@@ -1,0 +1,60 @@
+<style>  
+  .error{
+    color: red;
+  }
+.label-danger
+{
+  display: none;
+}
+.wrongCredentials
+{
+  display: none;
+}
+button:hover
+{
+  transform: scale(1.1,1.1);
+  text-shadow: 0px 0px 2px grey;
+  box-shadow: 0px 0px 5px grey;
+}
+
+</style>
+
+<div id="divLoginTemplate">
+    
+    <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Log In</h3>
+            </div>
+            <div class="panel-body">
+    <div id="login-form" class = "form-horizontal">
+      <div class="form-group">
+        <label for="username" class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-6">
+          <input type="Email" class="form-control" id="username" placeholder="Email" autofocus>
+          <br>
+          <span class="label label-danger emptyEmail">Email can't be left empty </span>
+          <span class="label label-danger wrongEmail">Email must contain @nagarro.com </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password" class="col-sm-3 control-label">Password</label>
+        <div class="col-sm-6">
+          <input type="password" class="form-control" id="password" placeholder="Password"  autofocus>
+          <br>
+          <span class="label label-danger wrongPassword">Password can't be left empty </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-6">
+          <button id = "login" class="btn btn-lg btn-primary" type="submit">Sign In</button>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-info alert-dismissible fade  wrongCredentials" role="alert">
+        <strong>Login Failed!</strong> Try again with valid credentials
+      </div>
+    
+            </div>
+  </div>
+   
+</div>

@@ -1,0 +1,48 @@
+body{
+	font-size: 16px;
+	background-color: #222;
+	color: grey;
+
+}
+
+#bodyContent
+{
+	margin-top: 100px;
+	
+}
+li:hover
+{
+	transform: scale(1.1,1.1);
+	text-shadow: 0px 0px 2px white;
+	box-shadow: 0px 0px 5px white;
+}
+div .placeholder:hover
+{
+	transform: scale(1.3,1.3);
+	text-shadow: 0px 0px 2px grey;
+	
+}
+div
+{
+	text-align: center;
+}
+.disable-event{
+	pointer-events: none;
+}
+
+.required-field::after{
+	content: '*';
+	color: red;
+}
+footer
+{
+	width: 100%;
+	bottom: 20px;
+	position: absolute;
+	text-align: center;
+	font-size: 20px;
+	background-color: black;
+}
+#search-options{
+	box-shadow: 0px -7px 4px rgba(0,0,0,0.3);
+}
